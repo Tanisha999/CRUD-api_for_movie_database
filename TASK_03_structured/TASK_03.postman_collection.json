@@ -1,0 +1,1640 @@
+{
+	"info": {
+		"_postman_id": "d279cdec-5143-429b-9414-3c655176ccb7",
+		"name": "TASK_03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30922455"
+	},
+	"item": [
+		{
+			"name": "Director",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/create_director",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"sanjay\",\r\n    \"age\":25,\r\n    \"gender\":\"male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/create_director",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"create_director"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create_director",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"sanjay\",\r\n    \"age\":25,\r\n    \"gender\":\"male\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/create_director",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"create_director"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:20:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "140"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"director\": {\n        \"age\": 25,\n        \"gender\": \"male\",\n        \"id\": 11,\n        \"name\": \"sanjay\"\n    },\n    \"message\": \"Director added successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/get_directors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/get_directors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"get_directors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get_directors",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_directors",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_directors"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:21:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "940"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"age\": 88,\n        \"gender\": \"male\",\n        \"id\": 1,\n        \"name\": \"akash chopra\"\n    },\n    {\n        \"age\": 45,\n        \"gender\": \"male\",\n        \"id\": 2,\n        \"name\": \"akash sharma\"\n    },\n    {\n        \"age\": 33,\n        \"gender\": \"male\",\n        \"id\": 3,\n        \"name\": \"aman mehra\"\n    },\n    {\n        \"age\": 35,\n        \"gender\": \"male\",\n        \"id\": 4,\n        \"name\": \"bikas gupta\"\n    },\n    {\n        \"age\": 27,\n        \"gender\": \"male\",\n        \"id\": 5,\n        \"name\": \"aman patel\"\n    },\n    {\n        \"age\": 30,\n        \"gender\": \"male\",\n        \"id\": 6,\n        \"name\": \"aman mair\"\n    },\n    {\n        \"age\": 30,\n        \"gender\": \"female\",\n        \"id\": 7,\n        \"name\": \"nidhi shrivastava\"\n    },\n    {\n        \"age\": 27,\n        \"gender\": \"female\",\n        \"id\": 8,\n        \"name\": \"nidhi patel\"\n    },\n    {\n        \"age\": 27,\n        \"gender\": \"female\",\n        \"id\": 9,\n        \"name\": \"vishakha\"\n    },\n    {\n        \"age\": 67,\n        \"gender\": \"female\",\n        \"id\": 10,\n        \"name\": \"shalini\"\n    },\n    {\n        \"age\": 25,\n        \"gender\": \"male\",\n        \"id\": 11,\n        \"name\": \"sanjay\"\n    }\n]"
+						},
+						{
+							"name": "get_director_by_id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_director/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_director",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:22:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"age\": 35,\n    \"gender\": \"male\",\n    \"id\": 4,\n    \"name\": \"bikas gupta\"\n}"
+						},
+						{
+							"name": "get_director_by_name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_director/akash",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_director",
+										"akash"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:23:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "175"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"age\": 88,\n        \"gender\": \"male\",\n        \"id\": 1,\n        \"name\": \"akash chopra\"\n    },\n    {\n        \"age\": 45,\n        \"gender\": \"male\",\n        \"id\": 2,\n        \"name\": \"akash sharma\"\n    }\n]"
+						},
+						{
+							"name": "details of director",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_details/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_details",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:42:17 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "293"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"director\": {\n        \"age\": 88,\n        \"gender\": \"male\",\n        \"id\": 1,\n        \"name\": \"akash chopra\"\n    },\n    \"movies\": [\n        {\n            \"cast\": \"Akshay Kumar,sanaya malhotra,rahul\",\n            \"director_id\": 1,\n            \"id\": 2,\n            \"name\": \"movie 02\",\n            \"release_date\": \"2003-07-29 00:00:00\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/delete_director/10",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/delete_director/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"delete_director",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete_director/10",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/delete_director/10",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"delete_director",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:59:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Director and associated movies deleted successfully\"\n}"
+						},
+						{
+							"name": "director not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/delete_director/10",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"delete_director",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:59:27 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Director not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/update_director/9",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"vishkaha singh\",\r\n    \"age\":66,\r\n    \"gender\":\"female\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/update_director/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"update_director",
+								"9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update_director/9",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"vishkaha singh\",\r\n    \"age\":66,\r\n    \"gender\":\"female\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/update_director/9",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"update_director",
+										"9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 07:07:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"age\": 66,\n    \"gender\": \"female\",\n    \"id\": 9,\n    \"name\": \"vishkaha singh\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "getting movies acc. to time",
+					"item": [
+						{
+							"name": "http://127.0.0.1:5000/get_movies_around_date?end_date=2017-12-31",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\":\"akshay kumar\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_movies_around_date?end_date=2017-12-31",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_movies_around_date"
+									],
+									"query": [
+										{
+											"key": "end_date",
+											"value": "2017-12-31"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "before given time",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"name\":\"akshay kumar\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/get_movies_around_date?end_date=2017-12-31",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"get_movies_around_date"
+											],
+											"query": [
+												{
+													"key": "end_date",
+													"value": "2017-12-31"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "Werkzeug/3.0.1 Python/3.12.1"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 02 Feb 2024 07:01:39 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1337"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"movies\": [\n        {\n            \"cast\": \"kritika,shubham\",\n            \"director_id\": 9,\n            \"id\": 1,\n            \"name\": \"movie 01\",\n            \"release_date\": \"2006-07-29 00:00:00\"\n        },\n        {\n            \"cast\": \"Akshay Kumar,sanaya malhotra,rahul\",\n            \"director_id\": 1,\n            \"id\": 2,\n            \"name\": \"movie 02\",\n            \"release_date\": \"2003-07-29 00:00:00\"\n        },\n        {\n            \"cast\": \"seeta,geeta,shubham,manoj\",\n            \"director_id\": 2,\n            \"id\": 3,\n            \"name\": \"movie 03\",\n            \"release_date\": \"2003-09-29 00:00:00\"\n        },\n        {\n            \"cast\": \"vikas,aman\",\n            \"director_id\": 7,\n            \"id\": 5,\n            \"name\": \"movie 05 updated..\",\n            \"release_date\": \"2017-05-04 00:00:00\"\n        },\n        {\n            \"cast\": \"karan,manoj,maya\",\n            \"director_id\": 7,\n            \"id\": 6,\n            \"name\": \"movie 06\",\n            \"release_date\": \"2017-11-09 00:00:00\"\n        },\n        {\n            \"cast\": \"vikas,manoj,vicky kaushal,rajkumar rao\",\n            \"director_id\": 2,\n            \"id\": 7,\n            \"name\": \"movie 07\",\n            \"release_date\": \"2017-11-24 00:00:00\"\n        },\n        {\n            \"cast\": \"rajkumar rao\",\n            \"director_id\": 4,\n            \"id\": 8,\n            \"name\": \"movie 08\",\n            \"release_date\": \"2014-12-24 00:00:00\"\n        },\n        {\n            \"cast\": \"viraj,manoj,sunaina,amrita\",\n            \"director_id\": 11,\n            \"id\": 11,\n            \"name\": \"movie 11 updated\",\n            \"release_date\": \"2010-09-10 00:00:00\"\n        }\n    ]\n}"
+								},
+								{
+									"name": "after given time",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"name\":\"akshay kumar\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/get_movies_around_date?start_date=2016-12-31",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"get_movies_around_date"
+											],
+											"query": [
+												{
+													"key": "start_date",
+													"value": "2016-12-31"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "Werkzeug/3.0.1 Python/3.12.1"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 02 Feb 2024 07:02:43 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "681"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"movies\": [\n        {\n            \"cast\": \"vikas,aman,kritika,anshika\",\n            \"director_id\": 5,\n            \"id\": 4,\n            \"name\": \"movie 04\",\n            \"release_date\": \"2055-07-04 00:00:00\"\n        },\n        {\n            \"cast\": \"vikas,aman\",\n            \"director_id\": 7,\n            \"id\": 5,\n            \"name\": \"movie 05 updated..\",\n            \"release_date\": \"2017-05-04 00:00:00\"\n        },\n        {\n            \"cast\": \"karan,manoj,maya\",\n            \"director_id\": 7,\n            \"id\": 6,\n            \"name\": \"movie 06\",\n            \"release_date\": \"2017-11-09 00:00:00\"\n        },\n        {\n            \"cast\": \"vikas,manoj,vicky kaushal,rajkumar rao\",\n            \"director_id\": 2,\n            \"id\": 7,\n            \"name\": \"movie 07\",\n            \"release_date\": \"2017-11-24 00:00:00\"\n        }\n    ]\n}"
+								},
+								{
+									"name": "between two different times",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"name\":\"akshay kumar\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/get_movies_around_date?start_date=2017-01-01&end_date=2017-12-31",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"get_movies_around_date"
+											],
+											"query": [
+												{
+													"key": "start_date",
+													"value": "2017-01-01"
+												},
+												{
+													"key": "end_date",
+													"value": "2017-12-31"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "Werkzeug/3.0.1 Python/3.12.1"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 02 Feb 2024 07:03:35 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "515"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"movies\": [\n        {\n            \"cast\": \"vikas,aman\",\n            \"director_id\": 7,\n            \"id\": 5,\n            \"name\": \"movie 05 updated..\",\n            \"release_date\": \"2017-05-04 00:00:00\"\n        },\n        {\n            \"cast\": \"karan,manoj,maya\",\n            \"director_id\": 7,\n            \"id\": 6,\n            \"name\": \"movie 06\",\n            \"release_date\": \"2017-11-09 00:00:00\"\n        },\n        {\n            \"cast\": \"vikas,manoj,vicky kaushal,rajkumar rao\",\n            \"director_id\": 2,\n            \"id\": 7,\n            \"name\": \"movie 07\",\n            \"release_date\": \"2017-11-24 00:00:00\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/get_movies_by_director/7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/get_movies_by_director/7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"get_movies_by_director",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get_movies_by_director",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_movies_by_director/7",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_movies_by_director",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:17:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "357"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"director_id\": 7,\n    \"movies\": [\n        {\n            \"cast\": \"vikas,aman\",\n            \"director_id\": 7,\n            \"id\": 5,\n            \"name\": \"movie 05 updated..\",\n            \"release_date\": \"2017-05-04 00:00:00\"\n        },\n        {\n            \"cast\": \"karan,manoj,maya\",\n            \"director_id\": 7,\n            \"id\": 6,\n            \"name\": \"movie 06\",\n            \"release_date\": \"2017-11-09 00:00:00\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "get_movie_by_id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_movie/9",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_movie",
+										"9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:30:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "138"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cast\": \"sanaya malhotra,aman,viraj\",\n    \"director_id\": 10,\n    \"id\": 9,\n    \"name\": \"movie 09\",\n    \"release_date\": \"2015-09-19 00:00:00\"\n}"
+						},
+						{
+							"name": "get_movie_by_name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_movie/movie 04",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_movie",
+										"movie 04"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:31:36 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cast\": \"vikas,aman,kritika,anshika\",\n    \"director_id\": 5,\n    \"id\": 4,\n    \"name\": \"movie 04\",\n    \"release_date\": \"2055-07-04 00:00:00\"\n}"
+						},
+						{
+							"name": "getting movies by single cast",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_movies_by_cast/manoj",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_movies_by_cast",
+										"manoj"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:35:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "722"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cast_member\": \"manoj\",\n    \"movies\": [\n        {\n            \"cast\": \"seeta,geeta,shubham,manoj\",\n            \"director_id\": 2,\n            \"id\": 3,\n            \"name\": \"movie 03\",\n            \"release_date\": \"2003-09-29 00:00:00\"\n        },\n        {\n            \"cast\": \"karan,manoj,maya\",\n            \"director_id\": 7,\n            \"id\": 6,\n            \"name\": \"movie 06\",\n            \"release_date\": \"2017-11-09 00:00:00\"\n        },\n        {\n            \"cast\": \"vikas,manoj,vicky kaushal,rajkumar rao\",\n            \"director_id\": 2,\n            \"id\": 7,\n            \"name\": \"movie 07\",\n            \"release_date\": \"2017-11-24 00:00:00\"\n        },\n        {\n            \"cast\": \"viraj,manoj,sunaina,amrita\",\n            \"director_id\": 11,\n            \"id\": 11,\n            \"name\": \"movie 11 updated\",\n            \"release_date\": \"2010-09-10 00:00:00\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "get all_movies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_all_movies",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_all_movies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:40:40 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1654"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"cast\": \"kritika,shubham\",\n        \"director_id\": 9,\n        \"id\": 1,\n        \"name\": \"movie 01\",\n        \"release_date\": \"2006-07-29 00:00:00\"\n    },\n    {\n        \"cast\": \"Akshay Kumar,sanaya malhotra,rahul\",\n        \"director_id\": 1,\n        \"id\": 2,\n        \"name\": \"movie 02\",\n        \"release_date\": \"2003-07-29 00:00:00\"\n    },\n    {\n        \"cast\": \"seeta,geeta,shubham,manoj\",\n        \"director_id\": 2,\n        \"id\": 3,\n        \"name\": \"movie 03\",\n        \"release_date\": \"2003-09-29 00:00:00\"\n    },\n    {\n        \"cast\": \"vikas,aman,kritika,anshika\",\n        \"director_id\": 5,\n        \"id\": 4,\n        \"name\": \"movie 04\",\n        \"release_date\": \"2055-07-04 00:00:00\"\n    },\n    {\n        \"cast\": \"vikas,aman\",\n        \"director_id\": 7,\n        \"id\": 5,\n        \"name\": \"movie 05 updated..\",\n        \"release_date\": \"2017-05-04 00:00:00\"\n    },\n    {\n        \"cast\": \"karan,manoj,maya\",\n        \"director_id\": 7,\n        \"id\": 6,\n        \"name\": \"movie 06\",\n        \"release_date\": \"2017-11-09 00:00:00\"\n    },\n    {\n        \"cast\": \"vikas,manoj,vicky kaushal,rajkumar rao\",\n        \"director_id\": 2,\n        \"id\": 7,\n        \"name\": \"movie 07\",\n        \"release_date\": \"2017-11-24 00:00:00\"\n    },\n    {\n        \"cast\": \"rajkumar rao\",\n        \"director_id\": 4,\n        \"id\": 8,\n        \"name\": \"movie 08\",\n        \"release_date\": \"2014-12-24 00:00:00\"\n    },\n    {\n        \"cast\": \"sanaya malhotra,aman,viraj\",\n        \"director_id\": 10,\n        \"id\": 9,\n        \"name\": \"movie 09\",\n        \"release_date\": \"2015-09-19 00:00:00\"\n    },\n    {\n        \"cast\": \"sanaya malhotra\",\n        \"director_id\": 6,\n        \"id\": 10,\n        \"name\": \"movie 10\",\n        \"release_date\": \"2003-09-19 00:00:00\"\n    },\n    {\n        \"cast\": \"viraj,manoj,sunaina,amrita\",\n        \"director_id\": 11,\n        \"id\": 11,\n        \"name\": \"movie 11 updated\",\n        \"release_date\": \"2010-09-10 00:00:00\"\n    }\n]"
+						},
+						{
+							"name": "cast not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/get_movies_by_cast/sunaina",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"get_movies_by_cast",
+										"sunaina"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 07:17:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Cast member not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/create_movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"movie 11\",\r\n    \"release_date\":\"2010-09-10\",\r\n    \"director_id\":11,\r\n    \"cast\":\"viraj,manoj,sunaina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/create_movie",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"create_movie"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create_movie",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"movie 11\",\r\n    \"release_date\":\"2010-09-10\",\r\n    \"director_id\":11,\r\n    \"cast\":\"viraj,manoj,sunaina\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/create_movie",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"create_movie"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:26:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Movie added successfully\",\n    \"movie\": {\n        \"cast\": \"viraj,manoj,sunaina\",\n        \"director_id\": 11,\n        \"id\": 11,\n        \"name\": \"movie 11\",\n        \"release_date\": \"2010-09-10 00:00:00\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/update_movie/11",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cast\": \"viraj,manoj,sunaina,amrita\",\r\n        \"director_id\": 11,\r\n        \"name\": \"movie 11 updated\",\r\n        \"release_date\": \"2010-09-10 00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/update_movie/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"update_movie",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update_movie",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"cast\": \"viraj,manoj,sunaina,amrita\",\r\n        \"director_id\": 11,\r\n        \"name\": \"movie 11 updated\",\r\n        \"release_date\": \"2010-09-10 00:00:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/update_movie/11",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"update_movie",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:29:35 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "147"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cast\": \"viraj,manoj,sunaina,amrita\",\n    \"director_id\": 11,\n    \"id\": 11,\n    \"name\": \"movie 11 updated\",\n    \"release_date\": \"2010-09-10 00:00:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/delete_movie/10",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/delete_movie/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"delete_movie",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete_movie/10",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/delete_movie/10",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"delete_movie",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:57:32 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Movie deleted successfully\"\n}"
+						},
+						{
+							"name": "movie not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/delete_movie/10",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"delete_movie",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:57:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Movie not found\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cast Member",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/create_cast_member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"mahesh gupta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/create_cast_member",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"create_cast_member"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create_cast_member",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"mahesh gupta\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/create_cast_member",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"create_cast_member"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:52:32 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cast_member\": {\n        \"id\": 16,\n        \"name\": \"mahesh gupta\"\n    },\n    \"message\": \"Cast member added successfully\"\n}"
+						},
+						{
+							"name": "already exists",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"viraj\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/create_cast_member",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"create_cast_member"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:53:18 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Cast member already exists.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:5000/update_cast_member/2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"vicky kaushal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/update_cast_member/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"update_cast_member",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update_cast_member/2",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"vicky kaushal\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/update_cast_member/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"update_cast_member",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Feb 2024 06:56:17 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"vicky kaushal\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
